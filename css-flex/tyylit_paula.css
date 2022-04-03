@@ -1,0 +1,231 @@
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-weight: normal;
+
+}
+
+a{
+    font-weight: normal;
+}
+
+body{
+    text-align: center;
+    background-color: #D2DEDE;
+    font-family: 'Lato', sans-serif;
+    color: #373F41;
+    margin: 0;
+}
+
+h1{
+    font-family: 'Playfair Display',sans-serif;
+    text-decoration: none;
+    font-weight: lighter;
+    margin-bottom: 5%;
+}
+
+h3{
+    font-family: 'Playfair Display',sans-serif;
+    text-decoration-line: underline;
+    font-weight: lighter;
+    font-style: italic;
+    margin-bottom: 5%;
+}
+
+h5{
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    line-height: 17px;
+    margin-bottom: 5%;
+
+}
+
+label{
+    font-family: 'Lato',sans-serif;
+    font-weight: lighter;
+    
+    margin-bottom: 5%;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    width: 25%;
+
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 18px;
+    text-align: center;
+    flex-direction: row;
+    padding: 30px 10%;
+}
+  
+.flex-item-left60 {
+    /*background-color: #f1f1f1;*/
+    padding: 0px;
+    flex: 60%;
+    margin-left: 5%;
+}
+
+  
+.flex-item-right30 {
+    background-color: white;
+    padding: 10px;
+    flex: 30%;
+    margin-right: 5%;
+    line-height: 29px;
+    flex-direction: row;
+}
+
+
+/*TUOTTEET SIVUN FILTER OSA */
+.flex-item-left30 {
+    /* background-color: #f1f1f1; */
+    padding: 0px;
+    flex: 30%;
+    margin-left: 5%;
+    align-items: stretch;
+}
+
+/* TUOTTEET SIVUN TUOTE OSA */
+.flex-item-right60 {
+    /* background-color: white; */
+    padding: 10px;
+    flex: 60%;
+    margin-right: 5%;
+    line-height: 29px;
+    min-height: 100vh;
+    flex-direction: row;
+    display: flex;
+}
+
+.flex-item-full{
+/*background-color: white;*/
+    padding: 10px;
+    flex: 90%;
+    margin: 5%;
+    
+}
+
+ul.no-bullets {
+    list-style-type: none;
+    margin: 10%;
+    padding: 0;
+    text-align: left;
+}
+
+.PalleroKuva{
+    border-radius: 50%;
+    width: 100px;
+    width: 100px;
+    margin-top: -15%;
+    margin-bottom: 5%; 
+}
+
+  .flex-item-box{ 
+    padding: 10px;
+    flex: 10%;
+    margin: 5%;
+  }
+  
+
+  .flex-item-product{
+    padding: 10px;
+    flex: 20%;
+    margin: auto;
+    gap: 5px;
+    clear: both;
+    /*align-items: flex-start;*/
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-shrink: 3;
+  }
+ 
+  .img-product{
+      width: 100%;
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  .img-fluid{
+      width: 100%;
+  }
+
+
+  li{
+      text-align: left !important;
+      
+  }
+
+  /* Dropdown Button */
+  .searchdropbtn {
+    font-size: 16px;
+    display: none;
+    padding: 9px 25px;
+	background-color: white;
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+    
+  }
+  
+  
+  /* Search box */
+  .searchdropdown-content {
+    display: flex;
+    flex: 100%;
+    width: 20%;
+    padding: 5px;
+    height: 100vh;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .searchdropdown-content {
+    display: flex;
+  }
+
+
+  /* Responsive layout  */
+  @media (max-width: 800px) {
+    .flex-item-right30, .flex-item-left60, .flex-item-product, .flex-item-right60, .flex-item-left30, .flex-item-full {
+      flex: 100%;
+      margin: 0%;
+      flex-direction: column;
+    }
+    .PalleroKuva{
+        margin-top: 0%;
+
+    }
+    .searchdropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+    .searchdropbtn{
+        display: block;
+    }
+
+
+  }
+
+
+
+
+

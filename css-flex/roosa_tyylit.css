@@ -1,0 +1,138 @@
+
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  font-family: 'Lato',sans-serif;
+}
+
+body{
+	height: 100vh;
+	width: 100%;
+  background-color: #D2DEDE;
+  color: #373F41;
+  text-align: center;
+}	
+
+a:link {
+color:#373F41;
+}
+
+a:visited {
+  
+  color: #373F41;
+}
+a:hover{
+	color: #d2dede;
+}
+
+a:active {
+  color: #373F41;
+}
+
+.content-container{
+display: flex;
+flex-direction: column;     
+background-color:#D2DEDE;
+width: auto;
+height:1oovh;
+left: 0px;
+top: 0px;
+  }
+  
+.text{
+  margin-top:10vh;
+  font-family: 'Licorice', 'cursive';
+  font-family: 'Playfair Display', serif;
+   font-weight: normal;
+  font-size: 48px;
+  line-height: 64px;
+  text-align: center;
+  color: #4F4F4F; 
+  padding: 50px;
+  }
+
+.card-container{
+display: flex;
+flex-direction: row; 
+margin-top: 50px;
+align-self: center;
+justify-content: center;
+  }
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    max-height: 500px;
+    margin-right: 40px;
+    margin-left: 40px;
+    align-items: center;    
+    text-align: center;
+  }
+  
+.p1{
+padding: 20px;
+font-size: 18px;
+font-weight: 800;
+}
+
+  .card button {
+    border: none;
+    border-radius: 0%;
+    outline: 0;
+    padding: 15px;
+    color: white;
+    background-color: #373F41;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+ 
+
+  .card button:hover {
+    opacity: 0.7;
+  }
+
+
+  .button1{
+    width: 500px;
+    height: 50px;
+    margin:10vh;
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #373F41;
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+    align-self: center; 
+    border-radius:0%;
+  }
+
+  .button1:hover {
+    background-color: rgba(0,136,169,0.8);
+  }
+
+  @media screen and (max-width: 720px){
+.content-container{
+  height: 290vh;
+}
+.text{
+  margin: auto;
+}
+.card-container{
+  display: flex;
+  flex-direction: column; 
+}
+.card{
+  margin:10px;
+}
+.button1{
+  margin:20px;
+}
+  }

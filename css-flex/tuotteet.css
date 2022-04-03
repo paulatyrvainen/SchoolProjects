@@ -1,0 +1,253 @@
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-weight: normal;
+
+}
+
+a{
+    font-weight: normal;
+}
+
+body{
+    text-align: center;
+    background-color: #D2DEDE;
+    font-family: 'Lato', sans-serif;
+    color: #373F41;
+    margin: 0;
+}
+
+h1{
+    font-family: 'Playfair Display',sans-serif;
+    text-decoration: none;
+    font-weight: lighter;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+h3{
+    font-family: 'Playfair Display',sans-serif;
+    text-decoration-line: underline;
+    font-weight: lighter;
+    font-style: italic;
+    margin-bottom: 5%;
+}
+
+h5{
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    line-height: 17px;
+    margin-bottom: 5%;
+    padding: 5px;
+
+}
+
+label{
+    font-family: 'Lato',sans-serif;
+    font-weight: lighter;
+    
+    margin-bottom: 5%;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    width: 25%;
+
+}
+
+.flex-container-1{
+    padding: 10px;
+    height: 150px;
+  }
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 18px;
+    text-align: center;
+    flex-direction: row;
+    padding: 30px 10%;
+}
+  
+
+/*TUOTTEET SIVUN FILTER OSA */
+.flex-item-left30 {
+    /* background-color: #f1f1f1; */
+    padding: 0px;
+    flex: 30%;
+    margin-left: 5%;
+    align-items: stretch;
+}
+
+/* TUOTTEET SIVUN TUOTE OSA */
+.flex-item-right60 {
+    /* background-color: white; */
+    padding: 10px;
+    flex: 60%;
+    margin-right: 5%;
+    line-height: 29px;
+    min-height: 100vh;
+    flex-direction: row;
+    display: flex;
+}
+
+.flex-item-full{
+/*background-color: white;*/
+    padding: 10px;
+    flex: 90%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+ul.no-bullets {
+    list-style-type: none;
+    margin: 10%;
+    padding: 0;
+    text-align: left;
+}
+
+
+  .flex-item-product{
+    padding: 10px;
+    flex: 20%;
+    margin: auto;
+    gap: 5px;
+    clear: both;
+    /*align-items: flex-start;*/
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-shrink: 3;
+  }
+ 
+  .img-product{
+    width: 100%;
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+
+  li{
+      text-align: left !important;
+      
+  }
+
+  /* Dropdown Button */
+  .searchdropbtn {
+    font-size: 16px;
+    display: none;
+    padding: 9px 25px;
+	background-color: white;
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+    
+  }
+  
+  
+  /* Search box */
+  .searchdropdown-content {
+    display: flex;
+    flex: 100%;
+    width: 10%;
+    padding: 10px;
+    height: auto;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .searchdropdown-content {
+    display: flex;
+  }
+
+  /*Productgroup-buttons and img*/
+  .flex-item-right90{
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.filter-button-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 30%;
+}
+
+.filter-button{
+    border: none;
+    border-radius: 0%;
+    outline: 0;
+    padding: 12px;
+    color: #fff;
+    background-color: #373F41;
+    text-align: center;
+    cursor: pointer;
+    /*width: 90%; */
+    font-size: 18px;
+    font-weight: 500;
+    margin: 15px;
+}
+
+.pg-buttons button:hover{
+    background-color: rgba(0,136,169,0.8);
+}
+
+.flex-item-right90 img{
+    margin:15px;
+    width: 250px;
+}
+
+.clear{
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    padding: 10px;
+    font-size: 18px;
+}
+
+
+
+
+  /* Responsive layout  */
+  @media (max-width: 800px) {
+    .flex-item-right30, .flex-item-left60, .flex-item-product, .flex-item-right60, .flex-item-left30, .flex-item-full {
+      flex: 100%;
+      margin: 0%;
+      flex-direction: column;
+    }
+    .PalleroKuva{
+        margin-top: 0%;
+
+    }
+    .searchdropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      .pg-buttons button{
+        flex-direction: column;
+    }
+    #searchdropbtn{
+        display: flex;
+    }
+
+
+  }
